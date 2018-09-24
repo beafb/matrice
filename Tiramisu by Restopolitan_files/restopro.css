@@ -1,0 +1,441 @@
+body, nav {
+    background-color: #262555 !important;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-family: 'Caro';
+}
+
+h3 {
+    text-align: left;
+    color: white;
+    font-weight: 900;
+    font-family: 'Caro';
+}
+
+p {
+    font-family: 'Caro', sans-serif;
+}
+
+.title {
+    margin-top: 5rem;
+}
+
+.gif {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.gif-img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.subtitlte {
+    color: white;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+.arrowd {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.arrowdown {
+    width: 5%;
+}
+
+.price {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.price-img {
+    width: 50%;
+}
+
+.price > p {
+    color: white;
+    font-size: 2rem;
+}
+
+.price > p > #price-u {
+    font-size: 5rem;
+}
+
+.price > p > #price-c {
+    position: relative;
+    top: -2rem;
+}
+
+.price > p > #price-m {
+    position: relative;
+    left: -4rem;
+}
+
+.formsection {
+    margin: 1rem;
+}
+
+.cardo {
+    margin-top: 3rem;
+    background-color: #FF6363;
+    border-radius: 5px;
+    padding: 2rem;
+    margin: auto;
+    text-align: center;
+    box-shadow: 1px 1px 20px 13px #00000029;
+    margin-bottom: 3rem;
+}
+
+.title-card {
+    border-radius: 5px;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    margin: auto;
+    text-align: center;
+    box-shadow: 1px 1px 20px 13px #00000029;
+    position: relative;
+    background-color: #006bb6 !important;
+    left: 130px;
+    z-index: 99999;
+}
+
+.title-card-center {
+    border-radius: 5px;
+    padding: 2rem;
+    margin: auto;
+    text-align: center;
+    box-shadow: 1px 1px 20px 13px #00000029;
+    background-color: #006bb6;
+}
+
+.title-card-right {
+    border-radius: 5px;
+    padding: 2rem;
+    margin: auto;
+    text-align: center;
+    box-shadow: 1px 1px 20px 13px #00000029;
+    position: relative;
+    background-color: #006bb6;
+    right: 130px;
+    z-index: 99999;
+}
+
+.title-card-right > h2 {
+    color: white;
+}
+
+.title-card > h2 {
+    color: white;
+}
+
+.title-card > .subtitlte {
+    color: black;
+}
+
+.form-title {
+    text-align: left;
+    color: white;
+    font-weight: 900;
+    font-family: 'Montserrat';
+}
+
+.pro-input {
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 25px;
+    transition: transform .2s; /* Animation */
+    height: 2rem;
+    text-align: center;
+    border: 3px solid white;
+    padding: 0.5rem;
+    margin: 0.7rem 0 0.7rem 0;
+}
+
+.pro-input::placeholder {
+    color: white;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.pro-input:focus {
+    transform: scale(1.01);
+}
+
+.submit-button {
+    width: 100%;
+    color: black;
+    margin: auto;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    height: 3rem;
+    margin: 1rem 0 1rem 0;
+    cursor: pointer;
+    transition: background-color ease .5s, color ease .5s, border .5s ease, transform .2s;
+}
+
+.submit-button:hover {
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    transform: scale(1.01);
+}
+
+.submit-button:focus {
+    outline: none !important;
+}
+
+.arrowdown2 {
+    margin: 1rem 0 1rem 0;
+}
+
+.mobileshow {
+    display: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .arrow-r {
+        display: none !important;
+    }
+
+    .form-mobile {
+        padding-right: 1.5rem;
+    }
+
+    .arrowdown2 {
+        width: 20%;
+    }
+
+    .title-card {
+        border-radius: 0;
+        padding: 0;
+        box-shadow: none;
+        position: initial;
+        background-color: inherit;
+        left: 0;
+        z-index: 0;
+    }
+
+    .title-card > h2 {
+        color: white;
+    }
+
+    .title-card-right {
+        border-radius: 0;
+        padding: 0;
+        box-shadow: none;
+        position: initial;
+        background-color: inherit;
+        left: 0;
+        z-index: 0;
+    }
+
+    .title-card-right > h2 {
+        color: white;
+    }
+
+    .title-card-center {
+        border-radius: 0;
+        padding: 0;
+        box-shadow: none;
+        position: initial;
+        background-color: inherit;
+        left: 0;
+        z-index: 0;
+    }
+
+    .mobileshow {
+        display: inline;
+    }
+
+    .mobilehide {
+        display: none;
+    }
+
+    .roi-form {
+        border-right: none !important;
+        border-bottom: 1px solid white;
+    }
+
+    .roi-input {
+        width: 75% !important;
+        margin: 0;
+    }
+}
+
+.roi-form {
+    border-right: 3px solid white;
+}
+
+.form-sub > a {
+    color: white !important;
+}
+
+.roi-form > .form-group > label {
+    color: white;
+    font-family: Montserrat, sans-serif;
+}
+
+.roi-form > .form-group > input {
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+}
+
+.roi-input {
+    width: 20%;
+    transition: transform .2s; /* Animation */
+}
+
+.roi-input:focus {
+    transform: scale(1.01);
+}
+
+p.white {
+    color: white;
+}
+
+.fa {
+    cursor: pointer;
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    from {
+        transform: translate(0, 0px);
+    }
+    65% {
+        transform: translate(0, 10px);
+    }
+    to {
+        transform: translate(0, -0px);
+    }
+}
+
+.formtitle {
+    margin-bottom: 2rem;
+}
+
+.pricetag {
+    color: white;
+    padding: 10px;
+    width: 6rem;
+    border-radius: 3px;
+    font-family: Caro;
+    font-size: 2rem;
+    white-space: nowrap;
+}
+
+.number-icon {
+    background-color: #ff6c58;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 100%;
+}
+
+.btn-number, .btn-number2 {
+    background-color: transparent;
+}
+
+/*.numberCircle {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  background: #fff;
+  border: 2px solid #666;
+  color: #666;
+  text-align: center;
+  font: 32px Montserrat, sans-serif;
+}*/
+
+.numberCircle {
+    display: inline-block;
+
+    border-radius: 50%;
+    border: 2px solid;
+
+    font-size: 32px;
+}
+
+.numberCircle:before,
+.numberCircle:after {
+    content: '\200B';
+    display: inline-block;
+    line-height: 0px;
+
+    padding-top: 50%;
+    padding-bottom: 50%;
+}
+
+.numberCircle:before {
+    padding-left: 8px;
+}
+
+.numberCircle:after {
+    padding-right: 8px;
+}
+
+@font-face {
+    font-family: Caro;
+    src: url(font/carrosserie-bold-webfont.woff)
+}
+
+label {
+    font-family: Caro;
+}
+
+.input-number, .input-number2 {
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    font-family: Caro;
+    font-size:2rem;
+}
+
+.btn-number:focus, .btn-number2:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.savings {
+    color:#3CA171;
+}
+
+.expenses {
+    color:white;
+}
+
+.uno-dos-tres {
+    margin-right: 1rem;
+}
+
+.form-control:focus {
+    color: white !important;
+    background-color: transparent !important;
+}
+
+hr {
+        color: white;
+    border: 1px solid;
+    height: 0;
+    width: 10%;
+}
