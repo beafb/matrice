@@ -43,30 +43,27 @@ $('.input-number').change(function () {
     if (valueCurrent >= minValue) {
         $(".btn-number[data-type='minus'][data-field='" + name + "']").removeAttr('disabled')
     } else {
-        alert('Sorry, the minimum value was reached');
+        alert('Veuillez entrer un nombre supérieur à 0');
         $(this).val($(this).data('oldValue'));
     }
     if (valueCurrent <= maxValue) {
         $(".btn-number[data-type='plus'][data-field='" + name + "']").removeAttr('disabled')
     } else {
-        alert('Sorry, the maximum value was reached');
+        alert('Vous avez atteint le maximum !');
         $(this).val($(this).data('oldValue'));
     }
 
 
 });
 $(".input-number").keydown(function (e) {
-    // Allow: backspace, delete, tab, escape, enter and .
     if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
-        // Allow: Ctrl+A
         (e.keyCode == 65 && e.ctrlKey === true) ||
-        // Allow: home, end, left, right
         (e.keyCode >= 35 && e.keyCode <= 39)) {
-        // let it happen, don't do anything
         return;
     }
     // Ensure that it is a number and stop the keypress
-    if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+    /*if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+        console.log('blablas ' + e.keyCode)
         e.preventDefault();
-    }
+    }*/
 });

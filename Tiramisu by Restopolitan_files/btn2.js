@@ -1,6 +1,5 @@
 $('.btn-number2').click(function (e) {
     e.preventDefault();
-    console.log('blablabla');
     fieldName = $(this).attr('data-field');
     type = $(this).attr('data-type');
     var input = $("input[name='" + fieldName + "']");
@@ -44,13 +43,13 @@ $('.input-number2').change(function () {
     if (valueCurrent >= minValue) {
         $(".btn-number2[data-type='minus'][data-field='" + name + "']").removeAttr('disabled')
     } else {
-        alert('Sorry, the minimum value was reached');
+        alert('Veuillez entrer un nombre supérieur à 0');
         $(this).val($(this).data('oldValue'));
     }
     if (valueCurrent <= maxValue) {
         $(".btn-number2[data-type='plus'][data-field='" + name + "']").removeAttr('disabled')
     } else {
-        alert('Sorry, the maximum value was reached');
+        alert('Vous avez atteint le maximum !!!');
         $(this).val($(this).data('oldValue'));
     }
 
